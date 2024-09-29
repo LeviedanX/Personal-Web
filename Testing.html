@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Joki Tugas - Bagus Achmad Syahputra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav ul {
+            background-color: #333;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button, a.button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover, a.button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .customer-service-options {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .customer-service-options a {
+            display: inline-block;
+            margin-right: 10px;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .customer-service-options a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Jasa Joki Tugas</h1>
+        <p>Solusi terbaik untuk tugas SD, SMP, SMA, dan Kuliah</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#harga">Harga</a></li>
+            <li><a href="#kontak">Kontak Kami</a></li>
+            <li><a href="#info">Info Pemilik</a></li>
+        </ul>
+    </nav>
+
+    <section id="layanan">
+        <h2>Layanan Kami</h2>
+        <p>Kami menyediakan layanan pengerjaan tugas mulai dari SD hingga Kuliah:</p>
+        <ul>
+            <li><strong>Tugas SD:</strong> Matematika, Bahasa Indonesia, IPA, IPS, dll.</li>
+            <li><strong>Tugas SMP:</strong> Matematika, Bahasa Inggris, Fisika, Biologi, dll.</li>
+            <li><strong>Tugas SMA:</strong> Matematika, Kimia, Fisika, Ekonomi, dll.</li>
+            <li><strong>Tugas Kuliah:</strong> Makalah, laporan, skripsi, proyek, dll.</li>
+        </ul>
+    </section>
+
+    <section id="harga">
+        <h2>Daftar Harga</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tingkatan</th>
+                    <th>Jenis Tugas</th>
+                    <th>Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SD</td>
+                    <td>Tugas harian</td>
+                    <td>Rp 20.000</td>
+                </tr>
+                <tr>
+                    <td>SD</td>
+                    <td>Tugas proyek</td>
+                    <td>Rp 50.000</td>
+                </tr>
+                <tr>
+                    <td>SMP</td>
+                    <td>Tugas harian</td>
+                    <td>Rp 30.000</td>
+                </tr>
+                <tr>
+                    <td>SMP</td>
+                    <td>Tugas proyek</td>
+                    <td>Rp 70.000</td>
+                </tr>
+                <tr>
+                    <td>SMA</td>
+                    <td>Tugas harian</td>
+                    <td>Rp 40.000</td>
+                </tr>
+                <tr>
+                    <td>SMA</td>
+                    <td>Tugas proyek</td>
+                    <td>Rp 90.000</td>
+                </tr>
+                <tr>
+                    <td>Kuliah</td>
+                    <td>Makalah/Laporan</td>
+                    <td>Rp 150.000</td>
+                </tr>
+                <tr>
+                    <td>Kuliah</td>
+                    <td>Skripsi/Proyek</td>
+                    <td>Rp 500.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <p>Hubungi kami untuk informasi lebih lanjut atau pemesanan:</p>
+        <button onclick="tampilkanPilihanCustomerService()">Hubungi Customer Service</button>
+        <div class="customer-service-options" id="customerServiceOptions">
+            <a href="https://wa.me/6282133729286?text=Halo!%20Saya%20butuh%20informasi%20terkait%20layanan%20joki%20tugas." target="_blank">Hubungi via WhatsApp</a>
+            <a href="mailto:bagusachmadsyahputra@gmail.com?subject=Info%20Layanan%20Joki%20Tugas&body=Halo!%20Saya%20butuh%20informasi%20terkait%20layanan%20joki%20tugas." target="_blank">Hubungi via Email</a>
+        </div>
+    </section>
+
+    <section id="info">
+        <h2>Informasi Pemilik</h2>
+        <ul>
+            <li><strong>Owner:</strong> Bagus Achmad Syahputra</li>
+            <li><strong>Whatsapp:</strong> <a href="https://wa.me/6282133729286" target="_blank">+62 82133729286</a></li>
+            <li><strong>Instagram:</strong> I don't have</li>
+            <li><strong>Facebook:</strong> Guest account</li>
+            <li><strong>Gmail:</strong> <a href="mailto:bagusachmadsyahputra@gmail.com">bagusachmadsyahputra@gmail.com</a></li>
+        </ul>
+        <a class="button" href="https://wa.me/6282133729286?text=Halo!%20apakah%20disini%20menyediakan%20jasa%20layanan%20joki%20tugas%20yang%20cepat%20dan%20amanah?" target="_blank">Order Sekarang</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jasa Joki Tugas. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function tampilkanPilihanCustomerService() {
+            var options = document.getElementById('customerServiceOptions');
+            if (options.style.display === "none" || options.style.display === "") {
+                options.style.display = "block";
+            } else {
+                options.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
